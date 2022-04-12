@@ -44,7 +44,7 @@ async def start(b, m):
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/JoinOT).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [Support](https://t.me/XZ_SupportBot).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -66,7 +66,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/JoinOT).",
+                    text="Something went Wrong. Contact my [Support](https://t.me/XZ_SupportBot).",
                     parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
@@ -74,7 +74,7 @@ async def start(b, m):
             text='🙋 Hey Bruh!!\nI am Instant Telegram File to Link Generator Bot.\n\nSend me any file & see the magic!',
             reply_markup=InlineKeyboardMarkup(
                 [
-                    [InlineKeyboardButton('Bots Channel', url='https://t.me/Discovery_Updates'), InlineKeyboardButton('Support Group', url='https://t.me/JoinOT')],
+                    [InlineKeyboardButton('Bots Channel', url='https://t.me/XZ_Bots'), InlineKeyboardButton('Support', url='https://t.me/XZ_SupportBot')],
                     [InlineKeyboardButton('Developer', url='https://t.me/AbirHasan2005')]
                 ]
             ),
@@ -87,7 +87,7 @@ async def start(b, m):
                 if user.status == "kicked":
                     await b.send_message(
                         chat_id=m.chat.id,
-                        text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/JoinOT).",
+                        text="Sorry Sir, You are Banned to use me. Contact my [Support](https://t.me/XZ_SupportBot).",
                         parse_mode="markdown",
                         disable_web_page_preview=True
                     )
@@ -113,7 +113,7 @@ async def start(b, m):
             except Exception:
                 await b.send_message(
                     chat_id=m.chat.id,
-                    text="Something went Wrong. Contact my [Support Group](https://t.me/JoinOT).",
+                    text="Something went Wrong. Contact my [Support](https://t.me/XZ_SupportBot).",
                     parse_mode="markdown",
                     disable_web_page_preview=True)
                 return
@@ -151,7 +151,7 @@ async def help_handler(bot, message):
             if user.status == "kicked":
                 await bot.send_message(
                     chat_id=message.chat.id,
-                    text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/JoinOT).",
+                    text="Sorry Sir, You are Banned to use me. Contact my [Support](https://t.me/XZ_SupportBot).",
                     parse_mode="markdown",
                     disable_web_page_preview=True
                 )
@@ -173,7 +173,7 @@ async def help_handler(bot, message):
         except Exception:
             await bot.send_message(
                 chat_id=message.chat.id,
-                text="Something went Wrong. Contact my [Support Group](https://t.me/JoinOT).",
+                text="Something went Wrong. Contact my [Support](https://t.me/XZ_SupportBot).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
@@ -183,8 +183,7 @@ async def help_handler(bot, message):
         disable_web_page_preview=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Support Group", url="https://t.me/JoinOT"), InlineKeyboardButton("Bots Channel", url="https://t.me/Discovery_Updates")],
-                [InlineKeyboardButton("Developer", url="https://t.me/AbirHasan2005")]
+                [InlineKeyboardButton("Support", url="https://t.me/XZ_SupportBot"), InlineKeyboardButton("Bots Channel", url="https://t.me/XZ_Bots")]
             ]
         )
     )
