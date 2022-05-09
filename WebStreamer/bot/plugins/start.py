@@ -102,7 +102,7 @@ async def start(b, m):
                             ],
                             [
                                 InlineKeyboardButton("🔄 Refresh / Try Again",
-                                                     url=f"https://t.me/{(await b.get_me()).username}?start=AbirHasan2005_{usr_cmd}")
+                                                     url=f"https://t.me/{(await b.get_me()).username}?start=_{usr_cmd}")
                             ]
                         ]
                     ),
